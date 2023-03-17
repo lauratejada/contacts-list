@@ -48,12 +48,14 @@ h1 {
 .input {
     width: 100%;
     margin-top: 20px;
+    height: 91px;
 }
 
 
 .input .form {
     display: flex;
     width: 600px;
+    height: 91px;
 }
 
 .input .form label {
@@ -120,7 +122,6 @@ div.message-input {
 }
 
 .grid-container {
-    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat( 3, 1fr);
     grid-template-rows: repeat( 4, 1fr);
