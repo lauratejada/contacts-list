@@ -1,0 +1,158 @@
+@import url(reset.css);
+
+:root {
+    --app-bg-gray: #fff;/* used */
+    --app-body-text-color: #4c4d4d; /* used */
+}
+
+body {
+    background-color: var(--app-bg-gray);
+    color: var(--app-body-text-color);
+}
+
+/* ------------------------------- */
+/* CSS Page Container              */
+/* ------------------------------- */
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+/* ------------------------------- */
+/* HOME - Main                     */
+/* ------------------------------- */
+
+main {
+    height: 100vh;
+    overflow: auto;
+}
+
+section {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.input {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.input .form {
+    display: flex;
+    width: 600px;
+}
+
+.input .form label {
+    width: 80%;
+}
+
+.input .form input {
+    width: 100%;
+    height: 51px;
+    background-color: rgba(224, 224, 224, 0.561);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    padding-left: 15px;
+}
+
+input:focus {
+    border: 1px solid;
+    border-color: rgb(189, 189, 189);
+}
+
+.invalid {
+    border: 1px solid;
+    border-color: rgb(209, 0, 0);
+}
+
+div.message-input {
+    line-height: 20px;
+    color: rgb(209, 0, 0);
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.input .form button {
+    width: 20%;
+    height: 51px;
+    margin-left: 10px;
+}
+
+.button, div.message {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    background-color: #12274e;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px rgba(131, 131, 131, 0.4);
+    padding: 15px 35px;
+    cursor: pointer;
+    text-decoration: none;
+    animation-delay: 0.3s; 
+}
+
+.button:hover {
+    opacity: 0.7;
+}
+
+.content {
+    width: 80%;
+    min-width: 600px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.grid-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    grid-template-rows: repeat( 4, 1fr);
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    padding: 10px;
+}
+
+.grid-container div {
+    background-color: #e0e0e08f;
+    cursor: pointer;
+    width: 100%;
+    height: 100px;
+    box-shadow: 2px 2px rgba(131, 131, 131, 0.4);
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 14px;
+    text-align: left;
+}
+
+div.message {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    height: 50px;
+    background-color: #96007d;
+    padding: 0px 35px;
+    cursor: auto;
+}
+
+div.message p {
+    line-height: 50px;
+    text-align: center;
+
+}
